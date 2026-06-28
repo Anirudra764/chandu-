@@ -46,7 +46,7 @@ const toolMeta: Record<string, { icon: React.ComponentType<any>; categoryLabel: 
     proficiency: 80,
     label: "Analytics"
   },
-  "AI Tools (Gemini/ChatGPT)": {
+  "AI & Automation Tools": {
     icon: Sparkles,
     categoryLabel: "AI",
     proficiency: 88,
@@ -87,7 +87,7 @@ const getToolMeta = (name: string) => {
   if (lowerName.includes("meta") || lowerName.includes("facebook")) return { icon: Facebook, categoryLabel: "PAID ADS", proficiency: 90, label: "Meta Ads" };
   if (lowerName.includes("google ads")) return { icon: TrendingUp, categoryLabel: "PAID ADS", proficiency: 85, label: "Google Ads" };
   if (lowerName.includes("analytics")) return { icon: BarChart3, categoryLabel: "ANALYTICS", proficiency: 80, label: "Analytics" };
-  if (lowerName.includes("ai") || lowerName.includes("gemini") || lowerName.includes("chatgpt")) return { icon: Sparkles, categoryLabel: "AI", proficiency: 88, label: "AI Tools" };
+  if (lowerName.includes("ai") || lowerName.includes("automation")) return { icon: Sparkles, categoryLabel: "AI", proficiency: 88, label: "AI Tools" };
   if (lowerName.includes("workspace")) return { icon: Cloud, categoryLabel: "PRODUCTIVITY", proficiency: 92, label: "Workspace" };
   if (lowerName.includes("sheets")) return { icon: FileSpreadsheet, categoryLabel: "ANALYTICS", proficiency: 85, label: "Sheets" };
   if (lowerName.includes("notion")) return { icon: FileText, categoryLabel: "PRODUCTIVITY", proficiency: 78, label: "Notion" };

@@ -285,7 +285,7 @@ export const tools: Tool[] = [
   { name: "Meta Ads Manager", category: "advertising" },
   { name: "Google Ads", category: "advertising" },
   { name: "Google Analytics", category: "analytics" },
-  { name: "AI Tools (Gemini/ChatGPT)", category: "productivity" },
+  { name: "AI & Automation Tools", category: "productivity" },
   { name: "Google Workspace", category: "productivity" },
   { name: "Google Sheets", category: "analytics" },
   { name: "Notion", category: "productivity" },

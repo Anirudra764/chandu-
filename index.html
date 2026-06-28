@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ================================================================
+         SECURITY HEADERS (meta-level — real HTTPS headers set at server)
+         ================================================================ -->
+
+    <!-- 1. Referrer Policy: only send origin, not full path, to 3rd parties -->
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- 2. Content Security Policy: whitelist scripts, styles, fonts, images -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline';
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        img-src 'self' data: blob: https://images.unsplash.com;
+        connect-src 'self' https://wa.me;
+        media-src 'none';
+        object-src 'none';
+        base-uri 'self';
+        form-action 'self';
+        frame-ancestors 'none';
+        upgrade-insecure-requests;
+      "
+    />
+
+    <!-- 3. Clickjacking protection -->
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+
+    <!-- 4. Prevent MIME-type sniffing attacks -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+    <!-- 5. Permissions Policy: disable unused powerful browser APIs -->
+    <meta
+      http-equiv="Permissions-Policy"
+      content="
+        geolocation=(),
+        microphone=(),
+        camera=(),
+        payment=(),
+        usb=(),
+        magnetometer=(),
+        gyroscope=(),
+        accelerometer=(),
+        ambient-light-sensor=(),
+        encrypted-media=()
+      "
+    />
+
+    <!-- ================================================================
+         IDENTITY, SEO & SOCIAL
+         ================================================================ -->
+    <title>Chandan Mahanty — Digital Marketing Specialist &amp; Meta Ads Expert</title>
+    <meta name="description" content="Portfolio of Chandan Mahanty — 3 years experience, 120+ clients, ₹10 CR+ ad budget managed. Meta Ads, Google Ads, SEO, and Growth Marketing specialist based in India." />
+    <meta name="author" content="Chandan Mahanty" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#080808" />
+
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:title" content="Chandan Mahanty — Digital Marketing Specialist" />
+    <meta property="og:description" content="Performance marketing expert. 120+ clients. ₹10 CR+ ad budget managed. Campaigns that convert." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Chandan Mahanty — Digital Marketing Specialist" />
+    <meta name="twitter:description" content="Performance marketing expert. 120+ clients. ₹10 CR+ ad budget managed." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+# Robots.txt for Chandan Mahanty Portfolio
+# https://chandanmahanty.in/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow any sensitive paths (none exist, but defensive)
+Disallow: /api/
+Disallow: /.env
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://chandanmahanty.in/sitemap.xml
